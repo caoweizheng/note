@@ -1,0 +1,73 @@
+# Math #
+- round(4.6);
+	- //5 四舍五入
+- ceil(11.3)；
+	-  //12 向上取整
+- floor(11.8);
+	- //11 向下取整
+- random();
+	- 返回一个0-1的随机数(不包括1)
+- max(num1,num2);
+	- 返回一个较大的数
+- min(num1,num2);
+	- 返回一个较小的数
+- abs(num);
+	- 取绝对值
+- pow(x,y);
+	- 取x的y次方
+- sqrt();
+	- 开平方根
+- 三角函数
+	- sin(rad)
+	- cos(rad)
+	- tan(rad)
+		- rad:弧度
+		- rad = deg*Math.PI/180
+
+# Date #
+- 创建当前时间的日期和时间(只能使用构造函数定义)
+	- var d = new Date();
+		- 得到的是代码执行时的时间（本地时间）
+- 创建指定日期的时间和日期
+	- var d = new Date("2015/08/22");
+	- var d = new Date(56521211021);
+		- 参数为距1970-1-1零时的毫秒数
+- 获取年月日
+	- getFullYear()/setFullYear(2014);
+	- getMonth()/setMonth(12);
+		- 【注】获取月份是从0开始的
+	- getDate()/setDate(25);
+- 获取星期
+	- getDay();
+		- 0-6：星期天-星期六
+- 获取时分秒
+	- getHours()/setHours()
+	- getMinutes()/setMinutes()
+	- getSeconds()/setSeconds()
+	- getmilliSeconds()
+- 日期处理
+	- date.getTime()/setTime();
+		- 获取/修改某个日期自1970年1月1日0时以来的毫秒数
+	- date.toLocaleDateString(); 
+		- 以特定地区格式显示年、月、日
+		- 默认：2018/3/1
+	- date.toUTCString(); 
+		- 转换成UTC时间
+		- 得到英国伦敦时间
+			- 
+- ES5方法
+	- Date.parse(“2015-08-24”)
+		- 返回指定日期距1970-1-1零时的毫秒数
+			- PS：转换格式默认支持2015-08-24或2015/08/24
+	- Date.now();
+		- 返回执行这行代码时距1970-1-1零时的毫秒数
+
+- 延时与定时器
+	- setTimeout(fn,200)
+		- 两百毫秒后执行fn这个函数（只执行一次）,返回一个id标识
+	- clearTimeout(timeoutID)
+		- 清除指定id标识的延迟操作
+	- setInterval(fn,30)
+		- 每隔30毫秒执行一次fn这个函数,返回一个id标识
+	- clearInterval(intervalID)
+		- 清除指定id标识的定时器操作

@@ -1,0 +1,17 @@
+# json #
+- 转换
+	- 对象/数组-->json字符串 
+		- JSON.stringify(obj)
+	- json字符串-->对象、数组
+		- JSON.parse(jonstr);
+- 格式
+	- 属性名和字符串必须使用双引号
+	- 不能有注释
+	- 不能存在多余逗号
+	- 属性值必须为以下类型
+		- String
+		- Number
+		- Boolean
+		- Object
+		- Array
+		- Null
